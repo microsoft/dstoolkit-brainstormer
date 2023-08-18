@@ -1,0 +1,356 @@
+html, body{height: 100%}
+body {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+footer {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-size: x-small;
+  color: #000000;
+  background-color: #e6e5e5;
+  position: relative;
+  bottom: 0;
+}
+
+
+#greet {
+  background-color: PaleVioletRed;
+  border: none;
+  width: 200px;
+  color: white;
+}
+
+#greet:hover {
+  background-color: MediumVioletRed;
+}
+
+
+
+#question {
+  width: 20em;
+  height: 4em;
+}
+
+
+
+
+.wrapper1 {
+  display: inline-flex;
+  background: #5C2D91;
+  height: 70px;
+  width: 300px;
+  align-items: left;
+  justify-content: space-evenly;
+  border-radius: 3px;
+  padding: 20px 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper1 .option {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+.wrapper1 .option .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.wrapper1 .option .dot::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2 {
+  border-color: #d9d9d9;
+  background: #000000;
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-2:checked:checked~.option-2 .dot {
+  background: #fff;
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wrapper1 .option span {
+  font-size: 15px;
+  color: #808080;
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span {
+  color: #fff;
+}
+
+.wrapper2 {
+  display: inline-flex;
+  background: #000000;
+  height: 75px;
+  width: 300px;
+  align-items: left;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 10px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper2 .option {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+.wrapper2 .option .dot2 {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.wrapper2 .option .dot2::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#option-3:checked:checked~.option-3,
+#option-4:checked:checked~.option-4 {
+  border-color: #d9d9d9;
+  background: #5C2D91;
+}
+
+#option-3:checked:checked~.option-3 .dot2,
+#option-4:checked:checked~.option-4 .dot2 {
+  background: #fff;
+}
+
+#option-3:checked:checked~.option-3 .dot2::before,
+#option-4:checked:checked~.option-4 .dot2::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wrapper2 .option span {
+  font-size: 15px;
+  color: #808080;
+}
+
+#option-3:checked:checked~.option-3 span,
+#option-4:checked:checked~.option-4 span {
+  color: #fff;
+}
+
+
+
+
+
+table.purpleHorizon {
+  border: 4px solid #792396;
+  background-color: #555555;
+  width: 1000px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.purpleHorizon td,
+table.purpleHorizon th {
+  border: 1px solid #555555;
+  padding: 5px 2px;
+}
+
+table.purpleHorizon tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+table.purpleHorizon tr:nth-child(even) {
+  background: #CC3BFC;
+}
+
+table.purpleHorizon thead {
+  background: #792396;
+  border-bottom: 4px solid #792396;
+}
+
+table.purpleHorizon thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  border-left: 2px solid #792396;
+}
+
+table.purpleHorizon thead th:first-child {
+  border-left: none;
+}
+
+table.purpleHorizon tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #CE3CFF;
+  background: -moz-linear-gradient(top, #da6dff 0%, #d34fff 66%, #CE3CFF 100%);
+  background: -webkit-linear-gradient(top, #da6dff 0%, #d34fff 66%, #CE3CFF 100%);
+  background: linear-gradient(to bottom, #da6dff 0%, #d34fff 66%, #CE3CFF 100%);
+  border-top: 5px solid #792396;
+}
+
+table.purpleHorizon tfoot td {
+  font-size: 13px;
+}
+
+table.purpleHorizon tfoot .links {
+  text-align: right;
+}
+
+table.purpleHorizon tfoot .links a {
+  display: inline-block;
+  background: #792396;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.header-rect {
+  position: absolute;
+  width: 100%;
+  height: 467px;
+  left: 0px;
+  top: 0px;
+  background: #F0F1F3;
+}
+
+.microsoft-logo {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0.5%;
+  bottom: 0%;
+}
+
+.product-name {
+  /* String-product-name */
+  position: absolute;
+  left: 8%;
+  top: 0%;
+  /* SegoeUI Semibold / 18 - ms-fontSize-18 FontSizes.size18
+  React variable: FontSizes.size18
+  ..............................................
+  Header for Team’s channel names.
+  Also used in Pivots with large link size.
+  */
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  /* Neutrals / Web / Black  #000000 */
+}
+
+.headline {
+  /* String-product-name */
+  position: absolute;
+  width: 371px;
+  height: 52px;
+  left: 10%;
+  top: 30%;
+  font-weight: 350;
+  font-size: 42px;
+  line-height: 52px;
+}
+
+.introduction {
+  position: absolute;
+  width: 736px;
+  height: 92px;
+  left: 10%;
+  top: 50%;
+  /* SegoeUI Regular / 16 - ms-fontSize-16 FontSizes.size16
+  React variable: FontSizes.size16
+  ..............................................
+  Subject title, subject line in mail, SharePoint article body, Marketing emails as file name and body text.
+  */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.user-input {
+  padding-top: 20px;
+}
+
+.app-illustration {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  right: 10%;
+  top: 20%;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 40%;
+  width: 90%;
+}
+
+.result-table{
+  padding-top: 40px;
+}

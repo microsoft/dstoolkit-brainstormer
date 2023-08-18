@@ -1,0 +1,6 @@
+__pycache__/
+notebooks/*.ipynb
+*/**/.env
+logs/
+static/mdb5-free-standard
+.env

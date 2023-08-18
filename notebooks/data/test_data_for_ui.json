@@ -1,0 +1,94 @@
+{
+  "user_input": "The client want to work on a project on Text Analytics on Engineering Documents with NLP and Azure Stack.  Customer development team are trying to build text analytics on engineering documents and plan to test architecture of training the model in Public Azure and bring it as containers in Azure Stack",
+  "ideation_stage": {
+    "status": "Success",
+    "results": {
+      "use_case_1": {
+        "use_case_name": "Document Classification",
+        "explanations": "Classify engineering documents into different categories such as design specifications, product manuals, safety guidelines, etc., using Natural Language Processing (NLP) techniques such as tokenization, stemming, and stop-word removal. The model can be trained on Public Azure and deployed as a container in Azure Stack.",
+        "business_value": "High",
+        "feasibility": "Moderate"
+      },
+      "use_case_2": {
+        "use_case_name": "Entity Recognition",
+        "explanations": "Extract important information such as product names, part numbers, and dates from engineering documents using Named Entity Recognition (NER) techniques. This can aid in tracking product performance and identifying potential issues.",
+        "business_value": "Moderate",
+        "feasibility": "High"
+      },
+      "use_case_3": {
+        "use_case_name": "Sentiment Analysis",
+        "explanations": "Analyze the sentiment of engineering documents to identify areas where improvements can be made or potential customer concerns. This can be done using machine learning techniques such as Naive Bayes, Support Vector Machines (SVM), or Recurrent Neural Networks (RNN).",
+        "business_value": "Moderate",
+        "feasibility": "High"
+      },
+      "use_case_4": {
+        "use_case_name": "Keyword Extraction",
+        "explanations": "Extract important keywords from engineering documents to aid in search and retrieval. This can be done using NLP techniques such as TF-IDF (Term Frequency-Inverse Document Frequency) and can be trained on Public Azure and deployed as a container in Azure Stack.",
+        "business_value": "Low",
+        "feasibility": "Moderate"
+      },
+      "use_case_5": {
+        "use_case_name": "Topic Modeling",
+        "explanations": "Identify common topics within engineering documents using unsupervised machine learning techniques such as Latent Dirichlet Allocation (LDA) or Non-negative Matrix Factorization (NMF). This can aid in understanding the most important themes within the documents and can be trained on Public Azure and deployed as a container in Azure Stack.",
+        "business_value": "Moderate",
+        "feasibility": "Low"
+      }
+    }
+  },
+  "ip_recommendation": [
+    {
+      "status": "Success",
+      "results": [
+        {
+          "ip_id": 3,
+          "usage": "The Azure OpenAI App Demo can be used to develop NLP functionalities like entity extraction which can be useful in classifying engineering documents based on categories.",
+          "url": "https://github.com/microsoft/dstoolkit-AOAIFlaskApp",
+          "ip_title": "Azure OpenAI App Demo"
+        }
+      ]
+    },
+    {
+      "status": "Success",
+      "results": [
+        {
+          "ip_id": 2,
+          "usage": "Object detection can be used to identify and locate important entities such as product names, part numbers, and dates in the engineering documents, which can aid in performing Named Entity Recognition.",
+          "url": "https://github.com/microsoft/dstoolkit-azoda",
+          "ip_title": "Azure Object Detection"
+        }
+      ]
+    },
+    {
+      "status": "Success",
+      "results": []
+    },
+    {
+      "status": "Success",
+      "results": [
+        {
+          "ip_id": 3,
+          "usage": "This IP address can be used to showcase various NLP functionalities and use cases of Azure OpenAI such as entity extraction which can aid in keyword extraction from engineering documents.",
+          "url": "https://github.com/microsoft/dstoolkit-AOAIFlaskApp",
+          "ip_title": "Azure OpenAI App Demo"
+        }
+      ]
+    },
+    {
+      "status": "Success",
+      "results": [
+        {
+          "ip_id": 3,
+          "usage": "This IP is relevant to the use case as it showcases the various NLP functionalities and use cases of Azure OpenAI, which can be used to aid in identifying common topics within engineering documents using unsupervised machine learning techniques such as Latent Dirichlet Allocation (LDA) or Non-negative Matrix Factorization (NMF).",
+          "url": "https://github.com/microsoft/dstoolkit-AOAIFlaskApp",
+          "ip_title": "Azure OpenAI App Demo"
+        },
+        {
+          "ip_id": 7,
+          "usage": "This IP is relevant to the use case as Data Discovery is the process of understanding the data to determine its suitability for a machine learning project. Unsupervised Machine Learning techniques are used to quickly provide structured views on unstructured data such as text, images, and videos, all at scale using Synapse.",
+          "url": "https://github.com/microsoft/Data-Discovery-Toolkit",
+          "ip_title": "Data Discovery Toolkit"
+        }
+      ]
+    }
+  ]
+}

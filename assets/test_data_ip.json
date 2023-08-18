@@ -1,0 +1,33 @@
+{
+    "use_case_1":{
+        "status": "Success",
+        "results": [
+          {
+            "ip_id": 3,
+            "usage": "The Azure OpenAI App Demo can be used to develop NLP functionalities like entity extraction which can be useful in classifying engineering documents based on categories.",
+            "github_url": "https://github.com/microsoft/dstoolkit-AOAIFlaskApp",
+            "toolkit_url": "https://www.ds-toolkit.com/assets/49a0f600-0394-4525-b1b0-98d90d7fdc63",
+            "ip_title": "Azure OpenAI App Demo"
+          }
+        ]
+    },
+    "use_case_5":{
+        "status": "Success",
+        "results": [
+          {
+            "ip_id": 3,
+            "usage": "This IP is relevant to the use case as it showcases the various NLP functionalities and use cases of Azure OpenAI, which can be used to aid in identifying common topics within engineering documents using unsupervised machine learning techniques such as Latent Dirichlet Allocation (LDA) or Non-negative Matrix Factorization (NMF).",
+            "github_url": "https://github.com/microsoft/dstoolkit-AOAIFlaskApp",
+            "toolkit_url": "https://www.ds-toolkit.com/assets/49a0f600-0394-4525-b1b0-98d90d7fdc63",
+            "ip_title": "Azure OpenAI App Demo"
+          },
+          {
+            "ip_id": 7,
+            "usage": "This IP is relevant to the use case as Data Discovery is the process of understanding the data to determine its suitability for a machine learning project. Unsupervised Machine Learning techniques are used to quickly provide structured views on unstructured data such as text, images, and videos, all at scale using Synapse.",
+            "github_url": "https://github.com/microsoft/Data-Discovery-Toolkit",
+            "toolkit_url": "https://www.ds-toolkit.com/assets/49a0f600-0394-4525-b1b0-98d90d7fdc63",
+            "ip_title": "Data Discovery Toolkit"
+          }
+        ]
+    }
+}

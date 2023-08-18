@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  application:
+    build: ./
+    image: acrdstoolkitdemowedev.azurecr.io/demos/brainstormer:latest
+    environment:
+      - api_key=${api_key}
+      - api_base=${api_base}
+    ports:
+      - "8084:8084"

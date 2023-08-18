@@ -1,0 +1,12 @@
+{
+  "ip_description_topic_embedding.parquet":{
+    "fields":[
+      "ip_title",
+      "top_keywords",
+      "ip_id","ip_title"
+    ],
+    "model_id" : "text-embedding-ada-002",
+    "model_name": "text-embedding-ada-002",
+    "generation_method": "get_embedding"
+  }
+}

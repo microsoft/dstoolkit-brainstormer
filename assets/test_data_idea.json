@@ -1,0 +1,58 @@
+{
+  "user_input": "The client want to work on a project on Text Analytics on Engineering Documents with NLP and Azure Stack.  Customer development team are trying to build text analytics on engineering documents and plan to test architecture of training the model in Public Azure and bring it as containers in Azure Stack",
+  "ideation_stage": {
+    "status": "Success",
+    "results": [
+      {
+        "use_case_name": "Sentiment analysis for customer feedback on engineering products",
+        "explanations": "Use sentiment analysis techniques to understand the sentiment of customers towards engineering products. This could help identify areas for improvement and gauge overall customer satisfaction.",
+        "business_value": "High",
+        "feasibility": "High",
+        "use_case_id": "use_case_2",
+        "business_value_num": 100,
+        "feasibility_num": 100,
+        "overall_score": 99.0
+      },
+      {
+        "use_case_name": "Information extraction for engineering reports",
+        "explanations": "Use information extraction techniques to extract key information from engineering reports, such as project timelines, budgets, and deliverables. This could help with project management and identifying areas for improvement.",
+        "business_value": "High",
+        "feasibility": "Low",
+        "use_case_id": "use_case_5",
+        "business_value_num": 100,
+        "feasibility_num": 10,
+        "overall_score": 54.0
+      },
+      {
+        "use_case_name": "Named entity recognition for engineering documents",
+        "explanations": "Use named entity recognition techniques to extract information about people, organizations, and locations mentioned in engineering documents. This could help with identifying key players and trends in the industry.",
+        "business_value": "Moderate",
+        "feasibility": "High",
+        "use_case_id": "use_case_3",
+        "business_value_num": 50,
+        "feasibility_num": 100,
+        "overall_score": 74.0
+      },
+      {
+        "use_case_name": "Topic modeling for engineering documents",
+        "explanations": "Use topic modeling techniques to identify common themes and topics across engineering documents. This could help with organizing and categorizing documents for easier retrieval and analysis.",
+        "business_value": "Moderate",
+        "feasibility": "Moderate",
+        "use_case_id": "use_case_1",
+        "business_value_num": 50,
+        "feasibility_num": 50,
+        "overall_score": 49.0
+      },
+      {
+        "use_case_name": "Document clustering for engineering projects",
+        "explanations": "Use clustering techniques to group similar documents together based on their content. This could help with identifying patterns and relationships between different engineering projects.",
+        "business_value": "Low",
+        "feasibility": "Moderate",
+        "use_case_id": "use_case_4",
+        "business_value_num": 10,
+        "feasibility_num": 50,
+        "overall_score": 29.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "original_input": "Our retail customer requires assistance to create a better consumer experience using existing data and AI to remove friction from the buying experience. They wants to create a shopping experience for the consumer that enables them to buy the right products in a single visit to the retail store. ",
+  "use_case_list": [
+    {
+      "business_value": "High",
+      "business_value_num": 100,
+      "explanations": "Develop a product recommendation system that suggests the right products to customers based on their purchase history, search queries, and other relevant data. The system can help customers find the right products quickly and efficiently, improving their overall shopping experience and increasing the likelihood of a successful purchase. The system can also help the retailer to increase sales and customer retention by providing personalized recommendations and improving the customer experience.",
+      "feasibility": "Moderate",
+      "feasibility_num": 50,
+      "overall_score": 74,
+      "use_case_id": "use_case_1",
+      "use_case_name": "Product Recommendation System"
+    },
+    {
+      "business_value": "Moderate",
+      "business_value_num": 50,
+      "explanations": "Develop an in-store navigation system that helps customers find the products they need quickly and easily. The system can use machine learning algorithms to analyze the store layout and customer behavior to provide personalized recommendations for the most efficient path to find the products. The system can also help the retailer to optimize their store layout and product placement to improve the overall shopping experience for customers.",
+      "feasibility": "High",
+      "feasibility_num": 100,
+      "overall_score": 74,
+      "use_case_id": "use_case_2",
+      "use_case_name": "In-Store Navigation System"
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+		<link rel="icon" href="{{ url_for('static', filename='logo//favicon.ico') }}" type="image/x-icon" />
+		<title>Brainstormer</title>
+	</head>
+	<body>
+		<div class="header-rect">
+			<img class="microsoft-logo" src="{{ url_for('static', filename='logo/Microsoft-logo_rgb_c-gray 1.png') }}"/>
+			<img class="app-illustration" src="{{ url_for('static', filename='images/Picture2.png') }}">
+			<h1 class="headline">Brainstormer</h1>
+			<p class="introduction">The data science toolkit is an open-source collection of proven ML and AI implementation accelerators, that enable the automation of commonly repeated development processes to allow data science practitioners to focus more time on delivering complex business value and less time on basic setup.</p>
+		</div>
+		<div class="container d-flex justify-content-center">
+			<div class="main-content">
+				<div class="user-input">
+					<div class="row">
+						<div></div>
+					</div>
+					<label for="user-idea" class="form-label"><b>Describe your business problem</b></label>
+					<div class="input-group">
+						<textarea class="form-control" rows="5" id="user-idea"></textarea>
+					</div>
+				</div>
+				<div class="user-input">
+					<input class="form-check-input" type="checkbox" value="" id="use-sample-check">
+					<label class="form-check-label" for="flexCheckDefault">
+						Use sample
+					</label>
+				</div>
+				<div class="user-input">
+					<div class="row">
+						<div class="col-3">
+							<label for="number_cases" class="form-label"><b>Choose number of use case</b></label>
+						</div>
+						<div class="col-4">
+							<div class="input-group">
+								<input type="number" class="form-control" min="1" max="10" maxlength="2" value="1" id="number_cases">
+								<div class="input-group-append">
+									<span class="input-group-text">use case(s)</span>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="user-input">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-2">
+							<div class="row">
+								<button type="button" class="btn btn-primary" id="submit-input">Submit</button>
+							</div>
+						</div>
+						<div class="col"></div>
+					</div>
+				</div>
+				
+				<div class="result-table">
+					<table id="example" class="table table-hover" style="width:100%">
+					</table>
+				</div>
+				<div class="container d-flex justify-content-center chart-area" >
+					<div id="idea-chart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" tabindex="-1" id="loading-modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="text-center" id="loading-spinner">
+							<div class="spinner-grow text-primary"></div>
+							<div class="spinner-grow text-success"></div>
+							<div class="spinner-grow text-danger"></div>
+							<div class="spinner-grow text-warning"></div>
+							<div class="spinner-grow text-info"></div>
+							<div class="spinner-text">Loading...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" tabindex="-1" id="ip-modal">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+					<h5 class="modal-title text-center">Related IP</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" id="ip-list-data">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="download-btn">Save results</button>
+					</div> 
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+		function download(data, filename, type) {
+			var file = new Blob([data], {type: type});
+			if (window.navigator.msSaveOrOpenBlob) // IE10+
+				window.navigator.msSaveOrOpenBlob(file, filename);
+			else { // Others
+				var a = document.createElement("a"),
+						url = URL.createObjectURL(file);
+				a.href = url;
+				a.download = filename;
+				document.body.appendChild(a);
+				a.click();
+				setTimeout(function() {
+					document.body.removeChild(a);
+					window.URL.revokeObjectURL(url);  
+				}, 0); 
+			}
+		}
+		$(document).ready(function(){
+			$('#loading-modal').modal('hide');
+			$('#submit-input').click(function(){
+				$('#loading-modal').modal('show');
+				var input_val = $('#user-idea').val();
+				var number_cases = $('#number_cases').val();
+				$.ajax({
+					type:'POST',
+					url: '/idea',
+					data: JSON.stringify(
+						{
+							user_input: input_val,
+							usecase_number: number_cases
+						}
+					),
+					contentType: "application/json; charset=utf-8",
+					success: function(data){
+						$('#loading-modal').modal('hide');
+						var dataSet = data['results']
+						if ($.fn.dataTable.isDataTable('#example')) {
+							$('#example').DataTable().destroy();
+						}
+						table = $('#example').DataTable({
+							data: dataSet,
+							columns: [
+								{"title": "ID", "data": "use_case_id"},
+								{"title": "Name", "data":"use_case_name"},
+								{"title": "Business Value", "data":"business_value"},
+								{"title": "Feasibility", "data":"feasibility"},
+								{"title": "Explanations", "data":"explanations", "width":"50%"},
+								{
+									"title": "Actions",
+									"data": "use_case_id",
+									"render": function(data, type, full, meta){
+										return '<button class="btn btn-mini btn-info id="'+data+  '-button">Click to view related IPs</button>';
+									}
+								}
+							],			
+						});
+						$('#example tbody').on('click', 'tr', function() {
+							$('#loading-modal').modal('show');
+							row_val = table.row(this).data()
+							$.ajax({
+								type:'POST',
+								url:'/ip',
+								data: JSON.stringify(
+									{
+										"original_input":input_val,
+										"use_case_list":{
+											"use_case_name":row_val["use_case_name"],
+											"explanations":row_val["explanations"]
+										}
+									}
+								),
+								contentType: "application/json; charset=utf-8",
+								success: function(data){
+									$('#loading-modal').modal('hide');
+									var ip_list = ''
+									for (var ip of data){
+										ip_list = ip_list+'<h6 class="text-center">'+ip['ip_title']+'</h6>'
+										ip_list = ip_list+'<p>'+ip['usage']+'</p>'
+										ip_list = ip_list+'<p><a class="btn btn-primary" role="button" href='+ip['toolkit_url']+' target="_blank"><i class="bi bi-info-circle"></i> Toolkit link'+'</a> <a class="btn btn-primary" role="button" href='+ip['github_url']+' target="_blank"><i class="bi bi-github"></i> Github link'+'</a></p><hr>'
+									}
+									$('.modal-title').text('Related IP for ' +row_val['use_case_id']+ ' - ' + row_val['use_case_name'] + '')
+									$('#ip-list-data').html(ip_list)
+									$('#ip-modal').modal('show');
+									$('#download-btn').click(function(){
+										user_idea = $('#user-idea').val()
+										chatgpt_prompt = "With the help of ChatGPT, a few use cases are generated for a business problem, and some existing IP we can use are recommended. I will provide the context of the above results, and I want to continue conversation. \n"
+										all_data = {
+											"business_idea": user_idea,
+											"use_case_list": dataSet,
+											"relevant_ip": data
+										}
+										download_data = chatgpt_prompt + JSON.stringify(all_data)
+										download(download_data, "brainstormer.txt", "text")
+									})
+								},
+								error: function(XMLHttpRequest, textStatus, errorThrown) {
+									$('#loading-modal').modal('hide');
+									alert_message = "Status: " + textStatus + "\n"+"Error: " + errorThrown
+									alert(alert_message); 
+								}
+							})
+						})
+						trace_list = []
+						symbols_vals = ['circle', 'square',  'star', 'diamond-wide','triangle-up','hexagon2','pentagon','star-diamond', 'hexagram','hourglass']
+						for (uc in dataSet) {
+							use_case = dataSet[uc]
+							trace_name = use_case['use_case_name']
+							symbol_id = 0
+							if (uc > 9){
+								symbol_id = Math.floor(uc/9)
+							}else{
+								symbol_id = uc
+							}
+							map_tick = {
+								"Low": 0,
+								"Moderate": 1,
+								"High": 2
+							}
+							trace = {
+								name: trace_name,
+								x: [map_tick[use_case['business_value']]],
+								y: [map_tick[use_case['feasibility']]],
+								text: [use_case['use_case_name']],
+								mode: 'markers',
+								textposition: 'top',
+								type: 'scatters',
+								marker:{
+									size: use_case['overall_score'],
+									symbol: symbols_vals[symbol_id]
+								}
+							}
+							trace_list.push(trace)
+						}
+
+						var layout = {
+								xaxis:{
+									title: 'Business value',
+									tickmode: "array",
+									tickvals: [0,1,2],
+									ticktext: ["Low", "Moderate","High"]
+								},
+								yaxis:{
+									title: 'Feasibility',
+									tickmode: "array",
+									tickvals: [0,1,2],
+									ticktext: ["Low", "Moderate","High"]
+								},
+								width: 1000,
+								height: 600,
+								title: 'Use case business value vs feasibility',
+								showlegend: true,
+								legend: {
+									y:-0.2,
+									orientation: "h",
+									traceorder: 'normal',
+									font: {
+									family: 'sans-serif',
+									size: 10,
+									color: '#000'
+									}
+								}
+							}
+						
+						Plotly.newPlot('idea-chart', trace_list, layout);
+					},
+					
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						$('#loading-modal').modal('hide');
+						alert_message = "Status: " + textStatus + "\n"+"Error: " + errorThrown
+						alert(alert_message); 
+					}
+				})		
+			});
+			$('#use-sample-check').click(function(){
+				if ($('#use-sample-check').is(':checked') === true){
+					$('#loading-modal').modal('show');
+					$.ajax({
+						type: 'GET',
+						url: '/get_random_idea',
+						dataType: 'json',
+						success: function(res){
+							$('#loading-modal').modal('hide');
+							$('#user-idea').val(res["input"])
+						},
+						error: function(XMLHttpRequest, textStatus, errorThrown) {
+							$('#loading-modal').modal('hide');
+							alert_message = "Status: " + textStatus + "\n"+"Error: " + errorThrown
+							alert(alert_message); 
+						}
+					});
+				}else{
+					$('#user-idea').val("")
+				}
+
+			});
+
+		});
+	</script>
+	</body>
+	<footer>
+		<h6>DISCLAIMER</h6>
+		<p>Please be advised that the content produced by this brainstorming tool is generated by OpenAI's chatGPT model. The suggestions provided by this tool are intended to inspire creative thinking and brainstorming. They should not be considered as definitive solutions or final use cases. While the tool strives to generate useful and relevant content, each suggestion should be carefully reviewed before being applied. It's advised that users modify and tailor the generated ideas to best suit their specific circumstances and needs.This tool embodies the principles of Responsible AI. However, how the generated ideas are implemented remains the user's responsibility. We encourage all users to exercise due diligence, consider potential ethical implications, ensure fairness, and respect privacy when utilizing the output from this tool.</p>
+	</footer>
+</html>

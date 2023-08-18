@@ -1,0 +1,126 @@
+[
+    {
+        "id": 0,
+        "input": "The client, a bank, has accumulated data for a marketing campaign with the aim of contacting their clients and promoting the term deposit product. They are seeking advice on how to effectively utilize this data to enhance their business."
+    },
+    {
+        "id": 1,
+        "input": "As a fund-raising office of a university, the client has gathered a wealth of information about their donors. They are now seeking guidance on how to best leverage this data to improve their operations."
+    },
+    {
+        "id": 2,
+        "input": "The client, an education department, possesses data on various aspects such as student performance, family backgrounds of the students, study time, and more. They are seeking guidance on how to efficiently utilize this data."
+    },
+    {
+        "id": 3,
+        "input": "A manufacturing customer wants to develop machine learning (ML) models that can extract symbols, text, and connections from P&ID diagrams. Build the ML Ops pipeline and store the extracted data in a quarriable datastore for consumption."
+    },
+    {
+        "id": 4,
+        "input": "A internal energy company is looking to scale out an existing renewable energy platform that helps to forecast energy demand/supply (trading analytics) so they can understand the energy they are generating in-house and their margins. To be used by energy traders."
+    },
+    {
+        "id": 5,
+        "input": "My customer is working on a solution, where they want to be able to identify objects that are coming back from projects in order to know what they have in stock and where. At the moment people working on the warehouses don’t have the knowledge to identify these objects hence the question whether this could be done automatically using AI."
+    },
+    {
+        "id": 6,
+        "input": "The client want to work on a project on Text Analytics on Engineering Documents with NLP and Azure Stack.  Customer development team are trying to build text analytics on engineering documents and plan to test architecture of training the model in Public Azure and bring it as containers in Azure Stack"
+    },
+    {
+        "id": 7,
+        "input": "Client are having multiple data sources and it gets difficult to perform advanced analytics and visualize it. How effectively we can manage structures and unstructured data? Every team from customer has separate Data Warehouse and its getting complicated to make one Data Warehouse."
+    },
+    {
+        "id": 8,
+        "input": "My client wants to develop and apply a model that can determine defective products based on deep learning to production lines operated only by rule-based algorithms and visual inspection by inspectors. "
+    },
+    {
+        "id": 9,
+        "input": "The customer team want to enable quality inspection of their manufacturing line, to be carried out through noise measurement. They want to measure the noise of the product using vibration accelerometers in the production line and evaluate the quality of the product with ML models based on this noise data."
+    },
+    {
+        "id": 10,
+        "input": "My customer has service centers are located all over the world and provide repair service for their products. They have the LoB application (a.k.a Repair system) for service engineers to managing repair history. To increase the productivity of engineers, customer want to use AI technologies which detect barcode, Module name and S/N from the picture and convert to text."
+    },
+    {
+        "id": 11,
+        "input": "Our customer is a stock exchange company. They want to develop a collaboration platform between themselves and Its trading customers. A collaborative platform are making use of augmenting traditional datasets with alternate data sources and leverage AI/Cognitive analytics. Alternative data like news feeds, social media, online communities, communications metadata information that can be used along with traditional data. "
+    },
+    {
+        "id": 12,
+        "input": "My client is a multinational chain of coffeehouses. Their operation analytics team wants to  use video analytics to improve customer satisfaction, increase sales and reduce efficiency cost"
+    },
+    {
+        "id": 13,
+        "input": "My customer is a multinational corporation that manufactures construction, mining, forestry, and military equipment. They wants to develop a predictive maintenance model to predict engine, hydraulics, trying to predict upcoming failures for those parts. "
+    },
+    {
+        "id": 14,
+        "input": "A manufacturing company wants to build a incident management system app which provides factory floor personnel to log incidents on the shop floor as soon as they happen and can be tracked "
+    },
+    {
+        "id": 15,
+        "input": "A semi-conductor manufacturer would like to work on a Automated Material Handling System (AMHS) for their multiple manufacturing plants. They want to improve their current ML model to improve the routing algorithm for better manufacturing efficiency"
+    },
+    {
+        "id": 16,
+        "input": "My client is a industry certification company. They want to build a prototype using blockchain to help streamline their Certification business."
+    },
+    {
+        "id": 17,
+        "input": "Our retail customer requires assistance to create a better consumer experience using existing data and AI to remove friction from the buying experience. They wants to create a shopping experience for the consumer that enables them to buy the right products in a single visit to the retail store. "
+    },
+    {
+        "id": 18,
+        "input": "Customer Digital Manufacturing Team has developed a prototype solution for a use case which does the object detection of bobbins that are placed on the Racks on the Plant Shop Floor, identifies if the Bobbin is Full or empty, Large or Small and location of it via the inference result produced from the Images that are captured from IP Camera's that are provisioned on the Shop floor aiming at the Racks on which the bobbins are placed. "
+    },
+    {
+        "id": 19,
+        "input": "A tire manufacturing company want to decrease their energy usage and are lacking meaningful reporting which scales across their 70 plants to understand the products and stages in their production processes which are impacting their usage and cost for their maintenance team to act on."
+    },
+    {
+        "id": 20,
+        "input": "My client is a large car/taxi sharing company. The objective is to explore an data pattern for bringing large amounts of data from the Edge together and then leveraging ChatGPT to ask questions and reason over the sharable data."
+    },
+    {
+        "id": 21,
+        "input": "My customer builds TSA scanners in all of the airports around the world. The customer builds the scanners and ML modelling for finding prohibited substances that could risk air flight and security. "
+    },
+    {
+        "id": 22,
+        "input": "My customer is large multi-national manufacturing company. Their data scientist team has already implemented their ML models, deployed on an industrial PC running the ETP Edge Framework. However, their goal is to automate the deployment process so that the models can be trained with new data and deployed on the edge. This automation will be implemented for each pump, with each pump having its own unique set of data sources and trained model. They plan to automate this process for up to a thousand pumps. "
+    },
+    {
+        "id": 23,
+        "input": "My client is a fin-tech company for consumer finance. They want to handle bank checks with computer vision to speed up check processing"
+    },
+    {
+        "id": 24,
+        "input": "My client has a large OTT platform where they have movies and TV shows available in different languages besides their native languages. Currently they have a manual dubbing process to enable them to provide multi-language availability for all their content. The ask is to semi-automate the dubbing process with cognitive speech capabilities."
+    },
+    {
+        "id": 25,
+        "input": "My customer is looking to build a Digital Insurance platform to transform how they go to market, underwrite, and ascertain risks."
+    },
+    {
+        "id": 26,
+        "input": "My customer is a tel-company. They want to develop a product which offers organizations the ability to understand the movement of objects and their presence within an environment."
+    },
+    {
+        "id": 27,
+        "input": "my client is a telecommunications company looking to create a new product that provides organizations with the capability to track the movement of objects and their location within a given environment."
+    },
+    {
+        "id": 28,
+        "input": " I work with a consumer finance technology company seeking to enhance their operations by utilizing computer vision technology to streamline the processing of bank checks. The goal is to expedite the check handling process and improve the overall efficiency of their financial operations."
+    },
+    {
+        "id": 29,
+        "input": "As a business professional, I am working with a manufacturing company looking to develop an incident management system application. The purpose of this app is to allow factory floor personnel to log any incidents that occur on the shop floor in real-time, providing a centralized tracking mechanism for improved incident management and resolution."
+    },
+    {
+        "id": 30,
+        "input": "I am working with a stock exchange company that is seeking to develop a collaborative platform with its trading customers. This platform will utilize advanced technologies such as AI/Cognitive analytics to augment traditional datasets with alternative data sources, such as news feeds, social media, online communities, and communication metadata. By combining these sources of information, the platform aims to enhance collaboration and improve decision-making capabilities for all parties involved."
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "CHAT_MODEL":"ChatGPT",
+    "EMBEDDING_MODEL_DOC": "text-embedding-ada-002",
+    "EMBEDDING_MODEL_QUERY":"text-embedding-ada-002",
+    "LOGGING_LEVEL":"DEBUG",
+    "DEFAULT_SIM_THRESHOLD": 0,
+    "DEFAULT_SIM_TOPK":3,
+    "TEMP_IDEATION" : 0.7,
+    "TEMP_ASSESSMENT": 1,
+    "SYSTEM_DEFAULT_MSG" : {"role":"system","content":"You are a talented consulting data scientist. You will apply your knowledge of data science and machine learning to help a client to solve a business problem. "},
+    "IDEATION_PROMPT": "I will provide you a business problem delimited by triple backticks, generate {{USE_CASE_NUM}} machine learning or data analysis business use cases name that related to the business problem.\nPlease format the use case name and explanations for each use case, add business value (low, moderate, high) and feasiblity analyses (low, moderate, high) for each use case.\nFormat your response as a JSON object with: 'use_case_name', 'explanations', 'business_value', 'feasibility' as keys.\n\nThe business problem is:",
+    "ASSESSMENT_PROMPT_PREFIX": "I will provide you a business context, use case and a list of ip delimited by triple backticks. For each ip, assess if the it is relevant to the use case under the business context. If the ip is not relevant, response with 'not relevant' and usage as 'na'. If the it is  relevant, response 'relevant' and provide how you will use  this ip.\n Your response should only be JSON objects in the following format: [{\"use_case_name\": ... , \"ip_name\": ...., \"relevance\": ..., \"usage\":....}, {\"use_case_name\": ... , \"ip_name\": ...., \"relevance\": ..., \"usage\":....}]\n"
+}

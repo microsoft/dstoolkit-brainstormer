@@ -1,0 +1,163 @@
+[
+    {
+        "topic": "Anomaly Detection",
+        "explanation": "Anomaly detection is the process of identifying rare items or observations that do not conform to normal patterns in data. These outliers can indicate potential risks, control failures, or business opportunities. The Anomaly Detection Accelerator leverages the iJungle technique to enable anomaly detection on large datasets, which can help reduce costs and risks.",
+        "short_explanation": "Anomaly detection identifies rare items or observations that do not conform to normal patterns in data. The Anomaly Detection Accelerator leverages the iJungle technique to enable anomaly detection on large datasets, which can help reduce costs and risks.",
+        "top_keywords": "anomaly detection, outliers, risks, cost control, iJungle",
+        "ip_id": 0
+    },
+    {
+        "topic": "Continuous Integration (CI) using GitHub Actions for Terraform modules",
+        "explanation": "Continuous Integration (CI) using GitHub Actions for Terraform modules helps ensure consistency in deployment, cost control, compliance, and security for IT teams creating data labs or environments for data product development.",
+        "short_explanation": "CI for Terraform modules ensures consistent, secure data lab deployment.",
+        "top_keywords": "Continuous Integration, GitHub Actions, Terraform modules, deployment consistency, secure data lab",
+        "ip_id": 1
+    },
+    {
+        "topic": "Object Detection",
+        "explanation": "Object detection is a computer vision technique that involves identifying objects in images or videos and locating them. It can be used to automate visual tasks such as product inspection, quality control, item counting, document analysis, medical image analysis, and store surveillance.",
+        "short_explanation": "Automate visual tasks using object detection.",
+        "top_keywords": "Computer Vision, Image Analysis, Object Identification, Automation, Surveillance",
+        "ip_id": 2
+    },
+    {
+        "topic": "Natural Language Processing (NLP)",
+        "explanation": "NLP is a branch of AI that helps machines understand, interpret, and manipulate human language. This demo showcases various NLP functionalities and use cases of Azure OpenAI, such as call center analytics, text generation, and entity extraction.",
+        "short_explanation": "Azure OpenAI demo showcasing NLP functionalities for call center analytics, text generation, and entity extraction.",
+        "top_keywords": "Azure, OpenAI, NLP, call center analytics, text generation, entity extraction",
+        "ip_id": 3
+    },
+    {
+        "topic": "Customer Churn Prediction and Lifetime Value Analysis",
+        "explanation": "This accelerator helps businesses to predict the likelihood of customer churn and determine their lifetime value based on their spending habits. By identifying customers with a high probability of churn, businesses can intervene with targeted marketing strategies to prevent churn and allocate marketing budgets more effectively.",
+        "short_explanation": "Accelerator for predicting customer churn and lifetime value based on spending habits.",
+        "top_keywords": "customer churn, lifetime value, spending habits, marketing intervention, customer insights",
+        "ip_id": 4
+    },
+    {
+        "topic": "Conversational AI",
+        "explanation": "Conversational AI is a technology that enables intelligent applications with text and speech input, such as chat bots or voice bots. This accelerator simplifies access validation, identification, and authentication, adding security and speeding up the authentication process.",
+        "short_explanation": "Conversational AI accelerator simplifies authentication for chat bots and voice bots.",
+        "top_keywords": "Conversational AI, chat bots, voice bots, authentication, security",
+        "ip_id": 5
+    },
+    {
+        "topic": "Time Series Forecasting",
+        "explanation": "Time series forecasting is a data science technique used to predict future values based on historical data patterns. In this case, Microsoft Finance's time series forecasting framework, Finn, is implemented through an open-source R package called finnts to provide more accurate forecasts in 95% less time for corporate financial forecasting on Azure Synapse.",
+        "short_explanation": "Time series forecasting for accurate corporate financial forecasting on Azure Synapse.",
+        "top_keywords": "Time Series Forecasting, Microsoft Finance, Finn, Open-source R package, Corporate Financial Forecasting",
+        "ip_id": 6
+    },
+    {
+        "topic": "Data Discovery using Unsupervised Machine Learning",
+        "explanation": "Data Discovery is the process of understanding the data to determine its suitability for a machine learning project. Unsupervised Machine Learning techniques are used to quickly provide structured views on unstructured data such as text, images, and videos, all at scale using Synapse.",
+        "short_explanation": "Data Discovery using Unsupervised ML for unstructured data at scale using Synapse.",
+        "top_keywords": "Data Discovery, Unsupervised Machine Learning, Synapse, Structured Views, Unstructured Data",
+        "ip_id": 7
+    },
+    {
+        "topic": "Energy Profiling and Prediction",
+        "explanation": "Energy profiling and prediction is a data science technique used to understand the electricity profiles of machines in manufacturing plants based on factors such as speed and heating. This helps optimize plant operations, reduce costs, and improve energy governance and control.",
+        "short_explanation": "Energy profiling and prediction optimizes manufacturing plant operations, reduces costs, and improves energy governance and control.",
+        "top_keywords": "energy consumption, machine data, cost reduction, energy governance, plant operations",
+        "ip_id": 8
+    },
+    {
+        "topic": "Time Series Forecasting",
+        "explanation": "Time series forecasting is a technique used to predict future values based on historical data. This accelerator helps data scientists to forecast multiple time series by building models based on the time series profile, which is crucial in forecasting electricity demand, electricity production, and SKU demand in retail.",
+        "short_explanation": "This accelerator helps data scientists to forecast multiple time series by building models based on the time series profile.",
+        "top_keywords": "time series, forecasting, data preparation, model selection, electricity demand",
+        "ip_id": 9
+    },
+    {
+        "topic": "Fuzzy Matching",
+        "explanation": "Fuzzy matching is a technique used to match data from different sources that do not have a primary-key relationship. It is useful in scenarios where there are missing keys, messy data, or unstructured data. For example, it can be used to match product SKUs for master data or match people to skills for project management.",
+        "short_explanation": "Fuzzy matching matches data from different sources without a primary-key relationship. Useful for matching product SKUs or people to skills.",
+        "top_keywords": "fuzzy matching, data integration, record linkage, data matching, knowledge graphs",
+        "ip_id": 10
+    },
+    {
+        "topic": "Batch Processing with Microsoft Cognitive Services",
+        "explanation": "Batch processing with Microsoft Cognitive Services allows for automated generation of synthetic speech-model training data, batch transcription of audio files, and evaluation against a reference transcript. This can be useful for analyzing contact center conversations, text-to-speech applications, and scoring text strings on a pre-trained Microsoft LUIS model.",
+        "short_explanation": "Automated batch processing with Microsoft Cognitive Services for speech-model training data and audio transcription.",
+        "top_keywords": "batch processing, Microsoft Cognitive Services, speech-model training data, audio transcription, LUIS model",
+        "ip_id": 11
+    },
+    {
+        "topic": "Hierarchical Multi-Label Classification",
+        "explanation": "Hierarchical Multi-Label Classification is a machine learning technique that allows for assigning multiple labels to a single instance while taking into account the hierarchical structure of the labels. This technique is useful in scenarios where classes are hierarchically structured and objects can be assigned to multiple paths of the class hierarchy at the same time, such as text classification and image annotation.",
+        "short_explanation": "Hierarchical Multi-Label Classification assigns multiple labels to a single instance while considering the hierarchical structure of the labels. Useful for text classification and image annotation.",
+        "top_keywords": "Hierarchical, Multi-Label, Classification, Machine Learning, Text Classification, Image Annotation",
+        "ip_id": 12
+    },
+    {
+        "topic": "Knowledge Graphs for Search",
+        "explanation": "Knowledge graphs are a way to enrich search results by connecting related information and providing more context. This can improve the efficiency and consistency of business operations by reducing the time it takes to find relevant information.",
+        "short_explanation": "Using knowledge graphs to improve search efficiency and consistency.",
+        "top_keywords": "knowledge graph, search, efficiency, consistency, information",
+        "ip_id": 13
+    },
+    {
+        "topic": "Knowledge Mining",
+        "explanation": "Knowledge Mining is an AI-based discipline that helps organizations to quickly learn from vast amounts of unstructured data and uncover hidden insights, relationships, and patterns at scale. It provides an end-to-end solution to mine unstructured data into high-value actionable insights with better searchability and discoverability.",
+        "short_explanation": "Knowledge Mining is an AI-based discipline that helps organizations to quickly learn from vast amounts of unstructured data and uncover hidden insights, relationships, and patterns at scale.",
+        "top_keywords": "AI, unstructured data, hidden insights, relationships, patterns",
+        "ip_id": 14
+    },
+    {
+        "topic": "Large Scale Route Optimization",
+        "explanation": "Large Scale Route Optimization is a data science topic that involves creating an optimization engine to suggest the best route for product delivery. This can lead to increased delivery pace and cost savings.",
+        "short_explanation": "Large Scale Route Optimization for efficient product delivery",
+        "top_keywords": "route optimization, product delivery, cost savings, optimization engine, large-scale",
+        "ip_id": 15
+    },
+    {
+        "topic": "MLOps",
+        "explanation": "MLOps is a set of practices that combines machine learning and DevOps to help manage the entire machine learning lifecycle, from building and training models to deployment and monitoring in production. This accelerator provides a template for repeatable, consistent and easy to deploy MLOps to bring ML models to production and help data science teams to focus on AI aspects and specific customer nuances and enabling multi-disciplinary team collaboration.",
+        "short_explanation": "MLOps is a set of practices that combines machine learning and DevOps to help manage the entire machine learning lifecycle, from building and training models to deployment and monitoring in production.",
+        "top_keywords": "MLOps, machine learning, DevOps, deployment, monitoring",
+        "ip_id": 16
+    },
+    {
+        "topic": "ML Ops",
+        "explanation": "ML Ops is a set of practices and tools that help data science teams to collaborate, develop, and deploy machine learning models through a robust CI/CD process. The ML Ops for Databricks accelerator provides a fully configurable environment for managing large teams of data engineers and data scientists, ensuring consistency of dev/test/prod environments.",
+        "short_explanation": "ML Ops for Databricks helps teams collaborate, develop, and deploy ML data products through a robust CI/CD process.",
+        "top_keywords": "ML Ops, Databricks, collaboration, CI/CD, machine learning",
+        "ip_id": 17
+    },
+    {
+        "topic": "De-identification of sensitive data",
+        "explanation": "De-identification is the process of removing or masking personally identifiable information from data. Microsoft Presidio allows organizations to build de-identification pipelines, scan software systems and databases for personal information, and semi-automate data redaction. This enables risk reduction in data handling, unblocks integrations and migrations, and allows for de-identification of data at move or at rest.",
+        "short_explanation": "Microsoft Presidio enables de-identification of sensitive data to reduce risk and unblock integrations and migrations.",
+        "top_keywords": "De-identification, Sensitive data, Risk reduction, Integrations, Migrations",
+        "ip_id": 18
+    },
+    {
+        "topic": "Conversational AI for Contact Centers",
+        "explanation": "Conversational AI is a technology that enables machines to understand and respond to human language. This solution accelerator combines Microsoft's Power Virtual Agent and AudioCodes VoiceAI Connect Cloud to build a modern contact center assistant that can provide a customer experience that rivals that of an experienced human agent at a fraction of the cost.",
+        "short_explanation": "Build a modern contact center assistant with Conversational AI using Power Virtual Agent and AudioCodes VoiceAI Connect Cloud.",
+        "top_keywords": "Conversational AI, Contact Center, Power Virtual Agent, AudioCodes VoiceAI Connect Cloud, Customer Experience",
+        "ip_id": 19
+    },
+    {
+        "topic": "Customer Segmentation using RFM Analysis",
+        "explanation": "RFM analysis is a data-driven customer segmentation technique that uses recency, frequency, and monetary value metrics to identify high-value customers and customers who are likely to churn. This helps marketing teams to target specific sets of customers with personalized messaging to prevent churn and increase customer value.",
+        "short_explanation": "RFM analysis for customer segmentation",
+        "top_keywords": "RFM analysis, customer segmentation, churn prevention, personalized messaging, customer value",
+        "ip_id": 20
+    },
+    {
+        "topic": "Speech-to-Text Transcription and Classification",
+        "explanation": "Speech-to-Text Transcription and Classification is a data science topic that involves converting spoken words into written text and categorizing them based on their meaning. This technology can be used to monitor radio communications for safety and compliance purposes, as well as classify complex audio messages into actionable insights.",
+        "short_explanation": "Speech-to-Text Transcription and Classification converts spoken words into text and categorizes them. It can monitor radio communications for safety and compliance purposes and classify complex audio messages.",
+        "top_keywords": "Speech-to-Text, Transcription, Classification, Radio Communications, Safety Compliance",
+        "ip_id": 21
+    },
+    {
+        "topic": "Web Application for Object Detection and Segmentation using Azure Custom Vision and ML",
+        "explanation": "Vitastic is a web application accelerator that allows users to quickly build a web app with no front-end development prerequisites required. It serves object detection, classification, and segmentation workloads by leveraging Microsoft's themable React library FluentUI powered by Flask backend. Users can demonstrate pre-trained models running in Azure.",
+        "short_explanation": "Vitastic is a web app accelerator for object detection and segmentation using Azure Custom Vision and ML. It allows users to build their own UI to demonstrate pre-trained models running in Azure.",
+        "top_keywords": "Web Application, Object Detection, Segmentation, Azure Custom Vision, ML",
+        "ip_id": 22
+    }
+]
